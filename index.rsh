@@ -8,4 +8,6 @@ export const main = Reach.App(() => {
   });
   // Read about untrustworthy maps :)
   setOptions({ untrustworthyMaps: true });
+  // Initialize the dapp
+  init();
 });
