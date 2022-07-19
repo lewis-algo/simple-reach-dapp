@@ -6,4 +6,6 @@ export const main = Reach.App(() => {
   const A = Participant('A', {
     ...hasConsoleLogger
   });
+  // Read about untrustworthy maps :)
+  setOptions({ untrustworthyMaps: true });
 });
