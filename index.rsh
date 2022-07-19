@@ -10,4 +10,6 @@ export const main = Reach.App(() => {
   setOptions({ untrustworthyMaps: true });
   // Initialize the dapp
   init();
+  // Display deploying status notification to the console
+  A.interact.log('[.rsh] Status: DEPLOYING');
 });
