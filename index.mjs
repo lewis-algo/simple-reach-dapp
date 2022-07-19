@@ -14,3 +14,7 @@ console.log(`[.mjs] Whitelisted wallet network token balance: ${balance} ALGO`);
 const tBalance = stdlib.parseCurrency(1);
 // Create a test account for logging
 const tAccount = await stdlib.newTestAccount(tBalance);
+// Display deploying notification to the console
+console.log('[.mjs] Status: DEPLOYING');
+// Display attaching notification to the console
+console.log('[.mjs] Status: ATTACHING\n');
