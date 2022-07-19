@@ -22,4 +22,6 @@ export const main = Reach.App(() => {
   whitelistedAddresses[A] = address;
   // Display whitelisted wallet address
   A.interact.log('[.rsh] Whitelisted wallet address:', address);
+  // Prove that whitelisted wallet address is stored in whitelisted wallets map
+  A.interact.log('[.rsh] Whitelisted wallets map:', whitelistedAddresses[A], '\n');
 });
