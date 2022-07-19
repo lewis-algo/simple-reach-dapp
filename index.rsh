@@ -26,4 +26,6 @@ export const main = Reach.App(() => {
   A.interact.log('[.rsh] Whitelisted wallets map:', whitelistedAddresses[A], '\n');
   // Initiate a consensus step
   commit();
+  // Exit the program
+  exit();
 });
