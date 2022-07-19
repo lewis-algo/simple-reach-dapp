@@ -10,3 +10,7 @@ console.log(`[.mjs] Whitelisted wallet address: ${address}`)
 const balance = await loadStdlib(process.env).balanceOf(address);
 // Log the hardcoded wallet network token balance
 console.log(`[.mjs] Whitelisted wallet network token balance: ${balance} ALGO`);
+// Create test balance for logging
+const tBalance = stdlib.parseCurrency(1);
+// Create a test account for logging
+const tAccount = await stdlib.newTestAccount(tBalance);
