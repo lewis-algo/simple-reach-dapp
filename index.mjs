@@ -2,3 +2,7 @@ import {loadStdlib} from '@reach-sh/stdlib';
 import * as backend from './build/index.main.mjs';
 // Load stdlib
 const stdlib = loadStdlib();
+// Hardcode a wallet address
+const address = 'Y76M3MSY6DKBRHBL7C3NNDXGS5IIMQVQVUAB6MP4XEMMGVF2QWNPL226CA';
+// Log the hardcoded wallet address
+console.log(`[.mjs] Whitelisted wallet address: ${address}`)
