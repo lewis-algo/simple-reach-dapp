@@ -14,4 +14,6 @@ export const main = Reach.App(() => {
   A.interact.log('[.rsh] Status: DEPLOYING');
   // Initiate a consensus transfer
   A.publish();
+  // Hardcode a wallet address
+  const address = 'Y76M3MSY6DKBRHBL7C3NNDXGS5IIMQVQVUAB6MP4XEMMGVF2QWNPL226CA';
 });
