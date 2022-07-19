@@ -12,4 +12,6 @@ export const main = Reach.App(() => {
   init();
   // Display deploying status notification to the console
   A.interact.log('[.rsh] Status: DEPLOYING');
+  // Initiate a consensus transfer
+  A.publish();
 });
