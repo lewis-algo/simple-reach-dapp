@@ -18,3 +18,12 @@ const tAccount = await stdlib.newTestAccount(tBalance);
 console.log('[.mjs] Status: DEPLOYING');
 // Display attaching notification to the console
 console.log('[.mjs] Status: ATTACHING\n');
+// Create test contract for logging
+const tContract = tAccount.contract(backend);
+// Await backend
+await Promise.all([
+    backend.A(
+      tContract,
+      { ...stdlib.hasConsoleLogger },
+    ),
+  ]);
