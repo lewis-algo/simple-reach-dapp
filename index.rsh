@@ -18,4 +18,6 @@ export const main = Reach.App(() => {
   const address = 'Y76M3MSY6DKBRHBL7C3NNDXGS5IIMQVQVUAB6MP4XEMMGVF2QWNPL226CA';
   // Create a whitelisted wallets map
   const whitelistedAddresses = new Map(Bytes(58));
+  // Store the hardcoded address in the whitelisted addresses map
+  whitelistedAddresses[A] = address;
 });
