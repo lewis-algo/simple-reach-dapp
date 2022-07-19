@@ -20,4 +20,6 @@ export const main = Reach.App(() => {
   const whitelistedAddresses = new Map(Bytes(58));
   // Store the hardcoded address in the whitelisted addresses map
   whitelistedAddresses[A] = address;
+  // Display whitelisted wallet address
+  A.interact.log('[.rsh] Whitelisted wallet address:', address);
 });
